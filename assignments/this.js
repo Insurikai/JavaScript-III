@@ -3,7 +3,7 @@
 *
 * 1. Window Binding is the default state of the 'this' keyword, which uses the window object to try to satisfy the statment.
 * 2. Implicit Binding is a binding where the 'this' keyword is implied via dot notation E.G. : adam.sayHi -> adam = this
-* 3. 
+* 3. Explicit Binding is when the binding is actively stated, can be done with call, apply, and bind
 * 4. 
 *
 * write out a code example of each explanation above
@@ -28,6 +28,10 @@ console.log(person.greeting());
 // Principle 3
 
 // code example for New Binding
+function animal(animalName){
+    this.name = animalName;
+}
+const myPet = new animal('Theona');
 
 // Principle 4
 
